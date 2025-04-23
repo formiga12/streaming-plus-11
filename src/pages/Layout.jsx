@@ -19,7 +19,7 @@ export default function Layout({ children, currentPageName }) {
   const location = useLocation();
   
   // Define páginas públicas
-  const publicPages = ['Home', 'AdminLogin', 'index', '404'];
+  const publicPages = ['Home', 'AdminLogin', 'index', '404', 'Watch'];
   const isPublicPage = publicPages.includes(currentPageName);
   const isAdminPage = currentPageName?.startsWith('Admin') || currentPageName === 'ManageBanners' || currentPageName === 'ManageCustomers';
   
